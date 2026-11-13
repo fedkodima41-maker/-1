@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>РЕЙСИ — Ніжин ⇄ Київ</title>
+<style>
+:root {
+  --bg:#101216;
+  --panel:#1a1e26;
+  --panel2:#222832;
+  --border:#303744;
+  --text:#f4f5f7;
+  --muted:#9ba5b2;
+  --red:#ed594d;
+  --peach:#ffb38e;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:radial-gradient(ellipse at 80% 0%,#452524,transparent 38%),var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,sans-serif;
+}
+.container {max-width:1100px;margin:auto;padding:25px 18px 60px}
+header {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
+.brand {font-size:23px;font-weight:900;letter-spacing:1px}
+.logo {
+  display:inline-grid;place-items:center;
+  width:43px;height:43px;border-radius:14px;
+  background:linear-gradient(135deg,var(--red),var(--peach));
+  color:#171717;margin-right:10px
+}
+.status {color:var(--muted);font-size:12px}
+.hero h1 {font-size:clamp(35px,6vw,60px);margin:10px 0;letter-spacing:-2px}
+.hero h1 span {color:var(--peach)}
+.hero p {color:var(--muted)}
+.eyebrow {color:var(--peach);font-size:12px;letter-spacing:2px}
+.search {
+  margin-top:30px;padding:20px;
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:20px;
+  display:grid;grid-template-columns:1fr 45px 1fr 170px;
+  gap:12px;align-items:end
+}
+.field label {display:block;color:var(--muted);font-size:12px;margin-bottom:7px}
+input, select {
+  width:100%;padding:13px;
+  background:#11151b;border:1px solid var(--border);
+  border-radius:11px;color:white;font:inherit
+}
+button {
+  cursor:pointer;border:0;border-radius:11px;
+  padding:13px 17px;font:inherit;font-weight:750
+}
+.searchBtn {
+  background:linear-gradient(110deg,var(--red),var(--peach));
+  color:#211311
+}
+.swap {background:var(--panel2);color:var(--peach)}
+.direction-btn {
+  background:var(--panel2);color:var(--muted);
+  border:1px solid var(--border);padding:8px 13px;border-radius:30px;
+  font-size:12px;white-space:nowrap
+}
+.direction-btn.active {color:var(--peach);border-color:var(--red);background:#2a1f1d}
+.toolbar {
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:15px;margin:30px 0 15px
+}
+.count {font-size:21px;font-weight:800}
+.filters {display:flex;gap:8px}
+.filter {
+  background:var(--panel2);color:var(--muted);
+  border:1px solid var(--border);padding:8px 13px;border-radius:30px
+}
+.filter.active {color:var(--peach);border-color:var(--red)}
+.cards {display:grid;gap:12px}
+.train {
+  display:grid;grid-template-columns:100px 1fr 85px;
+  align-items:center;gap:15px;
+  padding:19px;background:var(--panel);
+  border:1px solid var(--border);border-radius:16px;
+  transition:.2s;cursor:pointer
+}
+.train:hover {border-color:#9b6255;transform:translateY(-2px)}
+.train:focus-visible {outline:2px solid var(--peach);outline-offset:2px}
+.time {font-size:25px;font-weight:850}
+.duration {font-size:12px;color:var(--muted)}
+.route {display:flex;align-items:center;gap:12px}
+.station {font-weight:750}
+.line {height:2px;flex:1;background:linear-gradient(90deg,var(--red),var(--peach));position:relative}
+.line:after {
+  content:"";position:absolute;right:0;top:-4px;
+  width:10px;height:10px;border-radius:50%;background:var(--peach)
+}
+.station-time {font-size:11px;font-weight:600;margin-left:4px;white-space:nowrap}
+.station-time.departure {color:var(--text)}
+.station-time.arrival {color:var(--peach)}
+.meta {display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.tag {font-size:11px;padding:4px 8px;border-radius:6px;background:#2b313b;color:#cbd1db}
+.tag.reg {background:#3b2924;color:#ffd0bd}
+.arrival {text-align:right;font-size:23px;font-weight:850}
+.arrival small {display:block;font-size:11px;color:var(--muted);font-weight:400}
+.notice {
+  margin-top:25px;padding:15px;
+  border:1px solid #705044;background:#2b211e;
+  border-radius:13px;color:#f1c3aa;font-size:13px
+}
+footer {margin-top:25px;color:var(--muted);font-size:12px}
+a {color:var(--peach)}
+.empty {padding:35px;text-align:center;background:var(--panel);border-radius:15px;color:var(--muted)}
+
+/* Modal */
+.modal-overlay {
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.7);z-index:1000;
+  display:flex;align-items:center;justify-content:center;
+  padding:20px;opacity:0;visibility:hidden;transition:.2s
+}
+.modal-overlay.open {opacity:1;visibility:visible}
+.modal {
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:20px;max-width:700px;width:100%;max-height:80vh;
+  overflow:auto;transform:scale(0.95);transition:.2s
+}
+.modal-overlay.open .modal {transform:scale(1)}
+.modal-header {
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px;border-bottom:1px solid var(--border)
+}
+.modal-title {font-size:18px;font-weight:800}
+.modal-close {
+  background:none;border:none;color:var(--muted);font-size:24px;
+  cursor:pointer;line-height:1;padding:0 10px
+}
+.modal-close:hover {color:var(--peach)}
+.modal-body {padding:20px}
+.modal-stations {display:grid;gap:8px}
+.modal-station {
+  display:grid;grid-template-columns:1fr auto auto;gap:12px;
+  padding:12px;background:var(--panel2);border-radius:10px;
+  border:1px solid var(--border);align-items:center
+}
+.modal-station-name {font-weight:600}
+.modal-station-times {display:flex;gap:16px;font-size:13px;color:var(--muted)}
+.modal-station-time {display:flex;align-items:center;gap:6px}
+.modal-station-time.arrival {color:var(--peach)}
+.modal-station-time.departure {color:var(--text)}
+.modal-station-km {font-size:11px;color:var(--muted);white-space:nowrap}
+.modal-train-info {display:flex;gap:16px;margin-bottom:16px;padding:12px;background:var(--panel2);border-radius:10px;border:1px solid var(--border)}
+.modal-train-info span {font-size:13px}
+.modal-search {
+  margin-bottom:16px;padding:12px;
+  background:var(--panel2);border:1px solid var(--border);
+  border-radius:10px;display:flex;gap:10px;align-items:center
+}
+.modal-search input {
+  flex:1;padding:10px 14px;
+  background:#11151b;border:1px solid var(--border);
+  border-radius:8px;color:white;font:inherit
+}
+.modal-search input::placeholder {color:var(--muted)}
+.modal-station.hidden {display:none}
+
+@media(max-width:750px) {
+ .search {grid-template-columns:1fr 1fr}
+ .swap {grid-column:1}
+ .searchBtn {grid-column:1/-1}
+ .train {grid-template-columns:1fr 1fr}
+ .routeBox {grid-column:1/-1;grid-row:2}
+ .arrival {grid-column:2;grid-row:1}
+ .direction-toggle {flex-wrap:wrap}
+}
+@media(max-width:450px) {
+ .container {padding:18px 12px}
+ .search {grid-template-columns:1fr}
+ .swap {width:45px}
+ .searchBtn {grid-column:auto}
+ .train {padding:14px}
+ .modal-station {grid-template-columns:1fr;gap:8px}
+ .modal-station-times {flex-wrap:wrap}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="brand"><span class="logo">↗</span>РЕЙСИ <span style="color:#ffb38e">/ UA</span></div>
+  <div class="status">ЗАЛІЗНИЧНИЙ РОЗКЛАД</div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">ПРИМІСЬКІ ТА РЕГІОНАЛЬНІ ПОЇЗДИ</div>
+  <h1>Ніжин <span>⇄</span> Київ</h1>
+  <p>Знайди свій рейс. Перевір час відправлення та прибуття.</p>
+</section>
+
+<section class="search">
+  <div class="field">
+    <label>ЗВІДКИ</label>
+    <input id="from" list="stations-list" placeholder="Оберіть станцію" autocomplete="off">
+    <datalist id="stations-list"></datalist>
+  </div>
+  <button class="swap" id="swap" title="Поміняти напрямок">⇄</button>
+  <div class="field">
+    <label>КУДИ</label>
+    <input id="to" list="stations-list" placeholder="Оберіть станцію" autocomplete="off">
+  </div>
+  <div class="field">
+    <label>ДАТА</label>
+    <input type="date" id="date">
+  </div>
+  <button class="searchBtn" id="search">Знайти рейси →</button>
+</section>
+
+<section class="toolbar">
+  <div>
+    <div class="count" id="count">Завантаження...</div>
+    <div class="status" id="subtitle">Рейси за напрямком</div>
+  </div>
+  <div class="filters" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <div class="direction-toggle" style="display:flex;gap:8px;margin-right:8px">
+      <button class="direction-btn active" data-direction="nizhyn_kyiv" id="dir-nizhyn-kyiv">Ніжин → Київ</button>
+      <button class="direction-btn" data-direction="kyiv_nizhyn" id="dir-kyiv-nizhyn">Київ → Ніжин</button>
+    </div>
+    <button class="filter active" data-filter="all">Усі</button>
+    <button class="filter" data-filter="Електричка">Електрички</button>
+    <button class="filter" data-filter="Регіональний">Регіональні</button>
+  </div>
+</section>
+
+<section class="cards" id="results"></section>
+
+<div class="notice">
+  <b>Увага!</b> Дані розкладу потрібно звіряти з офіційним джерелом.
+  Автоматичне оновлення ще не підключено. Дата вибору не гарантує,
+  що конкретний рейс курсує цього дня.
+</div>
+
+<footer>
+  РЕЙСИ / UA · Незалежний інформаційний проєкт<br><br>
+  Джерела:
+  <a href="https://swrailway.gov.ua/timetable/eltrain/" target="_blank">Укрзалізниця</a>
+  ·
+  <a href="https://railukraine.com/" target="_blank">Rail Ukraine</a>
+</footer>
+
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 class="modal-title" id="modal-title">Зупинки поїзда</h2>
+      <button class="modal-close" id="modal-close" aria-label="Закрити">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+let trains = [];
+let allStations = [];
+let filter = "all";
+let direction = "nizhyn_kyiv";
+
+const $ = id => document.getElementById(id);
+
+async function loadSchedule() {
+  try {
+    const res = await fetch("./trains.json");
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    trains = data.trains || [];
+
+    const stationSet = new Set();
+    trains.forEach(t => t.stations.forEach(s => stationSet.add(s.name)));
+    allStations = Array.from(stationSet).sort();
+
+    const dl = $("stations-list");
+    dl.innerHTML = allStations.map(n => '<option value="' + n + '">').join("");
+
+    if (trains.length > 0) {
+      const dates = Array.from(new Set(trains.map(t => t.date))).sort();
+      $("date").value = dates[0];
+      $("date").min = dates[0];
+      $("date").max = dates[dates.length - 1];
+    }
+
+    updateFromTo();
+    render();
+  } catch (e) {
+    $("count").textContent = "Помилка завантаження";
+    $("results").innerHTML = '<div class="empty">Не вдалося завантажити trains.json</div>';
+  }
+}
+
+function dirLabel(d) { return d === "kyiv_nizhyn" ? "Київ → Ніжин" : "Ніжин → Київ"; }
+function defFromTo(d) { return d === "kyiv_nizhyn" ? {from:"Київ",to:"Ніжин"} : {from:"Ніжин",to:"Київ"}; }
+function updateFromTo() {
+  const ft = defFromTo(direction);
+  $("from").value = ft.from;
+  $("to").value = ft.to;
+}
+
+function render() {
+  const date = $("date").value;
+  const fromIn = $("from").value.trim();
+  const toIn = $("to").value.trim();
+
+  let list = trains.filter(t => t.direction === direction && t.date === date);
+  if (fromIn) list = list.filter(t => t.stations.some(s => s.name === fromIn && s.departure));
+  if (toIn) list = list.filter(t => t.stations.some(s => s.name === toIn && s.arrival));
+  if (filter !== "all") list = list.filter(t => t.kind === filter);
+
+  $("count").textContent = list.length + " рейсів";
+  $("subtitle").textContent = dirLabel(direction) + " · " + date;
+
+  if (!list.length) {
+    $("results").innerHTML = '<div class="empty">Рейсів за цими параметрами немає</div>';
+    return;
+  }
+
+  $("results").innerHTML = list.map(t => {
+    const fs = t.stations.find(s => s.name === fromIn);
+    const ts = t.stations.find(s => s.name === toIn);
+    const fTime = fs?.departure;
+    const tTime = ts?.arrival;
+    const hasQ = fromIn || toIn;
+    const dFrom = fromIn || t.from;
+    const dTo = toIn || t.to;
+    const fHtml = (hasQ && fTime) ? ' <span class="station-time departure">🕑 ' + fTime + '</span>' : '';
+    const tHtml = (hasQ && tTime) ? ' <span class="station-time arrival">🕐 ' + tTime + '</span>' : '';
+    const kTag = t.kind === "Регіональний" ? "reg" : "";
+
+    return '<article class="train" tabindex="0" data-train-id="' + t.id + '" data-train-date="' + t.date + '">'
+      + '<div><div class="time">' + t.dep + '</div><div class="duration">' + t.duration + '</div></div>'
+      + '<div class="routeBox"><div class="route">'
+      + '<span class="station">' + dFrom + fHtml + '</span>'
+      + '<span class="line"></span>'
+      + '<span class="station">' + dTo + tHtml + '</span>'
+      + '</div>'
+      + '<div class="course" style="font-size:12px;color:var(--muted);margin:4px 0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">' + t.course + '</div>'
+      + '<div class="meta">'
+      + '<span class="tag ' + kTag + '">' + t.kind + '</span>'
+      + '<span class="tag">№ ' + t.id + '</span>'
+      + '<span class="tag">' + t.days + '</span>'
+      + '<span class="tag">' + t.stops + ' зупинок</span>'
+      + '</div></div>'
+      + '<div class="arrival">' + t.arr + '<small>прибуття</small></div>'
+      + '</article>';
+  }).join("");
+}
+
+function openModal(id, dt) {
+  const tr = trains.find(t => t.id === id && t.date === dt);
+  if (!tr) return;
+
+  const m = $("modal");
+  const b = $("modal-body");
+  const tl = $("modal-title");
+
+  tl.textContent = "Поїзд №" + tr.id + " (" + tr.kind + ") — " + tr.course;
+
+  const stHtml = tr.stations.map(s => {
+    const a = s.arrival ? '<span class="modal-station-time arrival">🕐 ' + s.arrival + '</span>' : '';
+    const d = s.departure ? '<span class="modal-station-time departure">🕑 ' + s.departure + '</span>' : '';
+    const km = (s.km !== null && s.km !== undefined) ? s.km + ' км' : '';
+    return '<div class="modal-station" data-name="' + s.name.toLowerCase() + '">'
+      + '<span class="modal-station-name">' + s.name + '</span>'
+      + '<div class="modal-station-times">' + a + d + '</div>'
+      + '<span class="modal-station-km">' + km + '</span>'
+      + '</div>';
+  }).join("");
+
+  b.innerHTML = '<div class="modal-train-info">'
+    + '<span><b>Маршрут:</b> ' + tr.course + '</span>'
+    + '<span><b>Дні курсування:</b> ' + tr.days + '</span>'
+    + '<span><b>Тривалість:</b> ' + tr.duration + '</span>'
+    + '<span><b>Зупинок:</b> ' + tr.stops + '</span>'
+    + '</div>'
+    + '<div class="modal-search"><input type="search" id="modal-station-search" placeholder="🔍 Пошук станції..." aria-label="Пошук станцій"></div>'
+    + '<div class="modal-stations" id="modal-stations-list">' + stHtml + '</div>';
+
+  const si = $("modal-station-search");
+  const els = b.querySelectorAll(".modal-station");
+  si.addEventListener("input", e => {
+    const q = e.target.value.toLowerCase().trim();
+    els.forEach(el => {
+      if (!q || el.dataset.name.includes(q)) el.classList.remove("hidden");
+      else el.classList.add("hidden");
+    });
+  });
+
+  m.classList.add("open");
+  si.focus();
+  $("modal-close").focus();
+}
+
+function closeModal() { $("modal").classList.remove("open"); }
+
+// Delegation
+const res = $("results");
+res.onclick = e => {
+  const c = e.target.closest(".train");
+  if (c) openModal(c.dataset.trainId, c.dataset.trainDate);
+};
+res.onkeydown = e => {
+  if ((e.key === "Enter" || e.key === " ") && e.target.closest(".train")) {
+    e.preventDefault();
+    const c = e.target.closest(".train");
+    openModal(c.dataset.trainId, c.dataset.trainDate);
+  }
+};
+
+// Listeners
+$("search").addEventListener("click", render);
+$("swap").addEventListener("click", () => {
+  direction = direction === "kyiv_nizhyn" ? "nizhyn_kyiv" : "kyiv_nizhyn";
+  updateBtns(); updateFromTo(); render();
+});
+function updateBtns() {
+  document.querySelectorAll(".direction-btn").forEach(b => b.classList.toggle("active", b.dataset.direction === direction));
+}
+document.querySelectorAll(".direction-btn").forEach(b => {
+  b.addEventListener("click", () => { direction = b.dataset.direction; updateBtns(); updateFromTo(); render(); });
+});
+document.querySelectorAll(".filter").forEach(b => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach(x => x.classList.remove("active"));
+    b.classList.add("active"); filter = b.dataset.filter; render();
+  });
+});
+$("date").addEventListener("change", render);
+let rt;
+["from","to"].forEach(id => $(id).addEventListener("input", () => { clearTimeout(rt); rt = setTimeout(render, 150); }));
+$("modal-close").addEventListener("click", closeModal);
+$("modal").addEventListener("click", e => { if (e.target === $("modal")) closeModal(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeModal(); });
+
+loadSchedule();
+</script>
+</body>
+</html>

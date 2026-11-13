@@ -1,0 +1,7104 @@
+{
+  "source": "https://swrailway.gov.ua/timetable/eltrain/",
+  "checked": "2026-11-13T11:43:30+02:00",
+  "date": "2026-11-13",
+  "route": "Київ — Ніжин",
+  "directions": {
+    "kyiv_nizhyn": {
+      "title": "Київ - Ніжин",
+      "stations_count": 35,
+      "trains": [
+        {
+          "tid": 30136,
+          "number": "6902",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "04:42"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "04:46",
+              "departure": "04:47"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "04:53",
+              "departure": "04:56"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "05:01",
+              "departure": "05:02"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "05:06",
+              "departure": "05:07"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "05:10",
+              "departure": "05:12"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "05:16",
+              "departure": "05:17"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "05:22",
+              "departure": "05:25"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "05:30",
+              "departure": "05:31"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "05:33",
+              "departure": "05:34"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "05:39",
+              "departure": "05:40"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "05:45",
+              "departure": "05:46"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "05:50",
+              "departure": "05:51"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "05:53",
+              "departure": "05:54"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "05:59",
+              "departure": "06:00"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "06:04",
+              "departure": "06:05"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "06:09",
+              "departure": "06:10"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "06:14",
+              "departure": "06:15"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "06:16",
+              "departure": "06:17"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "06:23",
+              "departure": "06:24"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "06:27",
+              "departure": "06:28"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "06:30",
+              "departure": "06:31"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "06:34",
+              "departure": "06:35"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "06:39",
+              "departure": "06:40"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "06:44",
+              "departure": "06:45"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "06:53",
+              "departure": "06:54"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "06:58",
+              "departure": "06:59"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "07:02",
+              "departure": "07:03"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "07:08",
+              "departure": "07:09"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "07:14",
+              "departure": "07:15"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "07:19",
+              "departure": "07:20"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "07:24",
+              "departure": "07:25"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "07:32",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30141,
+          "number": "6906",
+          "days": "щоденно",
+          "course": "Київ-Пас. (Північна) – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": null,
+              "departure": "07:52"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "07:55",
+              "departure": "07:56"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "08:00",
+              "departure": "08:02"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "08:04",
+              "departure": "08:06"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "08:10",
+              "departure": "08:11"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "08:16",
+              "departure": "08:19"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "08:22",
+              "departure": "08:23"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "08:24",
+              "departure": "08:25"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "08:31",
+              "departure": "08:32"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "08:35",
+              "departure": "08:36"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "08:39",
+              "departure": "08:41"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "08:44",
+              "departure": "08:45"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "08:50",
+              "departure": "08:51"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "08:53",
+              "departure": "08:54"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "08:59",
+              "departure": "09:00"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "09:04",
+              "departure": "09:16"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "09:18",
+              "departure": "09:19"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "09:25",
+              "departure": "09:26"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "09:30",
+              "departure": "09:31"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "09:33",
+              "departure": "09:34"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "09:36",
+              "departure": "09:37"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "09:41",
+              "departure": "09:42"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "09:46",
+              "departure": "09:47"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "09:55",
+              "departure": "09:56"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "10:00",
+              "departure": "10:01"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "10:04",
+              "departure": "10:05"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "10:10",
+              "departure": "10:11"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "10:16",
+              "departure": "10:17"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "10:21",
+              "departure": "10:22"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "10:26",
+              "departure": "10:27"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "10:33",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 29157,
+          "number": "892/891",
+          "days": "крім вт., чт.",
+          "course": "Фастів-1 – Славутич",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "08:07",
+              "departure": "08:08"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "08:12",
+              "departure": "08:13"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "08:18",
+              "departure": "08:21"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "08:25",
+              "departure": "08:26"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "08:30",
+              "departure": "08:31"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "08:34",
+              "departure": "08:36"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "08:43",
+              "departure": "08:46"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "08:57",
+              "departure": "08:58"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "09:29",
+              "departure": "09:30"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "09:48",
+              "departure": "09:49"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "10:04",
+              "departure": "10:06"
+            }
+          ]
+        },
+        {
+          "tid": 30681,
+          "number": "894",
+          "days": "по пт., сб., нд.",
+          "course": "Київ-Волинський – Конотоп - Пас",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "08:27"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "08:33",
+              "departure": "08:34"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "08:39",
+              "departure": "08:42"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "08:45",
+              "departure": "08:47"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "08:51",
+              "departure": "08:53"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "08:56",
+              "departure": "08:58"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "09:06",
+              "departure": "09:16"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "09:29",
+              "departure": "09:31"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "09:47",
+              "departure": "09:48"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "09:55",
+              "departure": "10:06"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "10:21",
+              "departure": "10:22"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "10:35",
+              "departure": "10:36"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "10:44",
+              "departure": "10:45"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "11:03",
+              "departure": "11:05"
+            }
+          ]
+        },
+        {
+          "tid": 30146,
+          "number": "6910",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "09:44"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "09:48",
+              "departure": "09:49"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "09:54",
+              "departure": "09:56"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "09:59",
+              "departure": "10:01"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "10:05",
+              "departure": "10:06"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "10:08",
+              "departure": "10:09"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "10:12",
+              "departure": "10:13"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "10:19",
+              "departure": "10:22"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "10:25",
+              "departure": "10:26"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "10:28",
+              "departure": "10:29"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "10:34",
+              "departure": "10:35"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "10:39",
+              "departure": "10:40"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "10:45",
+              "departure": "10:46"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "10:48",
+              "departure": "10:49"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "10:53",
+              "departure": "10:54"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "10:57",
+              "departure": "10:58"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "11:03",
+              "departure": "11:04"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "11:07",
+              "departure": "11:08"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "11:10",
+              "departure": "11:11"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "11:18",
+              "departure": "11:19"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "11:23",
+              "departure": "11:24"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "11:27",
+              "departure": "11:28"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "11:30",
+              "departure": "11:31"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "11:36",
+              "departure": "11:37"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "11:40",
+              "departure": "11:41"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "11:48",
+              "departure": "11:49"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "11:54",
+              "departure": "11:55"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "11:58",
+              "departure": "11:59"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "12:04",
+              "departure": "12:05"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "12:10",
+              "departure": "12:11"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "12:15",
+              "departure": "12:16"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "12:20",
+              "departure": "12:21"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "12:27",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30081,
+          "number": "6912",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "11:59"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "12:03",
+              "departure": "12:04"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "12:09",
+              "departure": "12:11"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "12:14",
+              "departure": "12:16"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "12:20",
+              "departure": "12:21"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "12:23",
+              "departure": "12:25"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "12:28",
+              "departure": "12:29"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "12:35",
+              "departure": "12:38"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "12:41",
+              "departure": "12:42"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "12:44",
+              "departure": "12:45"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "12:50",
+              "departure": "12:51"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "12:56",
+              "departure": "12:57"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "13:02",
+              "departure": "13:03"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "13:05",
+              "departure": "13:06"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "13:11",
+              "departure": "13:12"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "13:15",
+              "departure": "13:16"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "13:21",
+              "departure": "13:22"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "13:25",
+              "departure": "13:26"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "13:28",
+              "departure": "13:29"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "13:36",
+              "departure": "13:37"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "13:41",
+              "departure": "13:42"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "13:45",
+              "departure": "13:46"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "13:48",
+              "departure": "13:49"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "13:54",
+              "departure": "13:55"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "13:58",
+              "departure": "13:59"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "14:06",
+              "departure": "14:07"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "14:12",
+              "departure": "14:13"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "14:16",
+              "departure": "14:17"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "14:23",
+              "departure": "14:24"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "14:29",
+              "departure": "14:30"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "14:35",
+              "departure": "14:36"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "14:40",
+              "departure": "14:41"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "14:49",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 28474,
+          "number": "6914",
+          "days": "щоденно",
+          "course": "Київ-Пас. (Північна) – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": null,
+              "departure": "14:40"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "14:44",
+              "departure": "14:46"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "14:51",
+              "departure": "14:53"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "14:55",
+              "departure": "14:57"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "15:00",
+              "departure": "15:01"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "15:06",
+              "departure": "15:09"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "15:12",
+              "departure": "15:13"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "15:15",
+              "departure": "15:16"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "15:21",
+              "departure": "15:22"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "15:25",
+              "departure": "15:26"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "15:30",
+              "departure": "15:31"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "15:33",
+              "departure": "15:34"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "15:39",
+              "departure": "15:40"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "15:43",
+              "departure": "15:44"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "15:49",
+              "departure": "15:50"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "15:54",
+              "departure": "15:55"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "15:57",
+              "departure": "15:58"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "16:05",
+              "departure": "16:06"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "16:11",
+              "departure": "16:12"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "16:14",
+              "departure": "16:15"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "16:18",
+              "departure": "16:19"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "16:23",
+              "departure": "16:24"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "16:28",
+              "departure": "16:29"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "16:36",
+              "departure": "16:37"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "16:42",
+              "departure": "16:43"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "16:46",
+              "departure": "16:47"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "16:53",
+              "departure": "16:54"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "17:00",
+              "departure": "17:01"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "17:05",
+              "departure": "17:06"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "17:11",
+              "departure": "17:12"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "17:20",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30702,
+          "number": "6918",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "16:27"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "16:33",
+              "departure": "16:34"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "16:39",
+              "departure": "16:42"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "16:45",
+              "departure": "16:47"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "16:51",
+              "departure": "16:52"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "16:54",
+              "departure": "16:55"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "16:59",
+              "departure": "17:00"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "17:05",
+              "departure": "17:08"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "17:11",
+              "departure": "17:12"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "17:14",
+              "departure": "17:15"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "17:21",
+              "departure": "17:22"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "17:24",
+              "departure": "17:25"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "17:29",
+              "departure": "17:31"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "17:33",
+              "departure": "17:34"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "17:40",
+              "departure": "17:41"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "17:44",
+              "departure": "17:45"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "17:49",
+              "departure": "17:50"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "17:55",
+              "departure": "17:56"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "17:58",
+              "departure": "17:59"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "18:06",
+              "departure": "18:07"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "18:12",
+              "departure": "18:13"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "18:15",
+              "departure": "18:16"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "18:19",
+              "departure": "18:20"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "18:25",
+              "departure": "18:26"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "18:31",
+              "departure": "18:45"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "18:53",
+              "departure": "18:54"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "18:58",
+              "departure": "18:59"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "19:02",
+              "departure": "19:03"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "19:08",
+              "departure": "19:09"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "19:14",
+              "departure": "19:15"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "19:19",
+              "departure": "19:20"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "19:24",
+              "departure": "19:25"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "19:31",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30986,
+          "number": "896/895",
+          "days": "щоденно",
+          "course": "Фастів-1 – Шостка",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "16:56",
+              "departure": "16:57"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "17:01",
+              "departure": "17:02"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": "17:10",
+              "departure": "17:25"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "17:36",
+              "departure": "17:38"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "17:45",
+              "departure": "17:48"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "18:03",
+              "departure": "18:04"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "18:20",
+              "departure": "18:21"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "18:58",
+              "departure": "18:59"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "19:17",
+              "departure": "19:19"
+            }
+          ]
+        },
+        {
+          "tid": 30092,
+          "number": "6920",
+          "days": "крім сб., нд.",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "17:00"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "17:04",
+              "departure": "17:05"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "17:10",
+              "departure": "17:13"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "17:16",
+              "departure": "17:19"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "17:22",
+              "departure": "17:24"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "17:26",
+              "departure": "17:27"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "17:31",
+              "departure": "17:32"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "17:37",
+              "departure": "17:40"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "17:42",
+              "departure": "17:43"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "17:44",
+              "departure": "17:45"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "17:50",
+              "departure": "17:51"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "17:53",
+              "departure": "17:54"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "17:58",
+              "departure": "18:10"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "18:12",
+              "departure": "18:13"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "18:18",
+              "departure": "18:19"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "18:21",
+              "departure": "18:22"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "18:26",
+              "departure": "18:27"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "18:31",
+              "departure": "18:32"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "18:34",
+              "departure": "18:35"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "18:41",
+              "departure": "18:53"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "18:57",
+              "departure": "18:58"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "19:00",
+              "departure": "19:01"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "19:03",
+              "departure": "19:04"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "19:08",
+              "departure": "19:09"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "19:14",
+              "departure": "19:15"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "19:23",
+              "departure": "19:24"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "19:29",
+              "departure": "19:30"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "19:33",
+              "departure": "19:34"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "19:39",
+              "departure": "19:40"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "19:45",
+              "departure": "19:46"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "19:50",
+              "departure": "19:51"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "19:55",
+              "departure": "19:56"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "20:04",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 29867,
+          "number": "886/885",
+          "days": "крім ср.",
+          "course": "Київ-Волинський – Чернігів",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "17:30"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "17:34",
+              "departure": "17:35"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "17:40",
+              "departure": "17:43"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "17:46",
+              "departure": "17:47"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "17:51",
+              "departure": "17:54"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "17:56",
+              "departure": "17:58"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "18:08",
+              "departure": "18:11"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "18:24",
+              "departure": "18:25"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "18:41",
+              "departure": "18:42"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "19:02",
+              "departure": "19:03"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "19:24",
+              "departure": "19:25"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "19:44",
+              "departure": "19:47"
+            }
+          ]
+        },
+        {
+          "tid": 30699,
+          "number": "898",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "18:07"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "18:11",
+              "departure": "18:12"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "18:17",
+              "departure": "18:20"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "18:23",
+              "departure": "18:25"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "18:29",
+              "departure": "18:31"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "18:33",
+              "departure": "18:35"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "18:44",
+              "departure": "18:47"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "19:00",
+              "departure": "19:02"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "19:18",
+              "departure": "19:19"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "19:26",
+              "departure": "19:27"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "19:42",
+              "departure": "19:43"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "19:56",
+              "departure": "19:57"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "20:05",
+              "departure": "20:06"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "20:24",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30095,
+          "number": "6926",
+          "days": "щоденно",
+          "course": "Київ-Пас. (Північна) – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": null,
+              "departure": "19:24"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "19:28",
+              "departure": "19:29"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "19:33",
+              "departure": "19:35"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "19:37",
+              "departure": "19:39"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "19:43",
+              "departure": "19:44"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "19:49",
+              "departure": "19:52"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "19:55",
+              "departure": "19:56"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "19:58",
+              "departure": "19:59"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "20:04",
+              "departure": "20:05"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "20:09",
+              "departure": "20:10"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "20:14",
+              "departure": "20:15"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "20:18",
+              "departure": "20:19"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "20:24",
+              "departure": "20:25"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "20:28",
+              "departure": "20:29"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "20:34",
+              "departure": "20:35"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "20:39",
+              "departure": "20:40"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "20:42",
+              "departure": "20:43"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "20:49",
+              "departure": "20:50"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "20:55",
+              "departure": "20:56"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "20:58",
+              "departure": "20:59"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "21:02",
+              "departure": "21:03"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "21:07",
+              "departure": "21:08"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "21:13",
+              "departure": "21:14"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "21:21",
+              "departure": "21:22"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "21:27",
+              "departure": "21:28"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "21:31",
+              "departure": "21:32"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "21:38",
+              "departure": "21:39"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "21:45",
+              "departure": "21:46"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "21:50",
+              "departure": "21:51"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "21:56",
+              "departure": "21:57"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "22:05",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30097,
+          "number": "6928",
+          "days": "щоденно",
+          "course": "Київ-Волинський – Ніжин",
+          "stations": [
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": "20:37"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "20:41",
+              "departure": "20:42"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "20:48",
+              "departure": "20:51"
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "20:56",
+              "departure": "20:57"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "21:01",
+              "departure": "21:02"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "21:05",
+              "departure": "21:07"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "21:11",
+              "departure": "21:12"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "21:16",
+              "departure": "21:20"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "21:23",
+              "departure": "21:24"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "21:26",
+              "departure": "21:27"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "21:32",
+              "departure": "21:33"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "21:38",
+              "departure": "21:39"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "21:44",
+              "departure": "21:45"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "21:47",
+              "departure": "21:48"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "21:53",
+              "departure": "21:54"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "21:57",
+              "departure": "21:58"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "22:02",
+              "departure": "22:03"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "22:08",
+              "departure": "22:09"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "22:11",
+              "departure": "22:12"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "22:19",
+              "departure": "22:20"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "22:25",
+              "departure": "22:26"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "22:28",
+              "departure": "22:29"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "22:32",
+              "departure": "22:33"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "22:37",
+              "departure": "22:38"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "22:42",
+              "departure": "22:43"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "22:50",
+              "departure": "22:51"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "22:56",
+              "departure": "22:57"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "23:00",
+              "departure": "23:01"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "23:07",
+              "departure": "23:08"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "23:14",
+              "departure": "23:15"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "23:19",
+              "departure": "23:20"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "23:25",
+              "departure": "23:26"
+            },
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "23:34",
+              "departure": null
+            }
+          ]
+        }
+      ]
+    },
+    "nizhyn_kyiv": {
+      "title": "Ніжин - Київ",
+      "stations_count": 35,
+      "trains": [
+        {
+          "tid": 30271,
+          "number": "6903",
+          "days": "крім сб., нд.",
+          "course": "Ніжин – Київ-Пас. (Північна)",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "03:46"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "03:52",
+              "departure": "03:53"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "03:58",
+              "departure": "03:59"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "04:04",
+              "departure": "04:05"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "04:11",
+              "departure": "04:12"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "04:16",
+              "departure": "04:17"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "04:21",
+              "departure": "04:22"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "04:26",
+              "departure": "04:27"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "04:35",
+              "departure": "04:36"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "04:39",
+              "departure": "04:40"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "04:45",
+              "departure": "04:46"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "04:48",
+              "departure": "04:49"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "04:52",
+              "departure": "04:53"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "04:57",
+              "departure": "04:58"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "05:03",
+              "departure": "05:04"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "05:07",
+              "departure": "05:08"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "05:11",
+              "departure": "05:12"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "05:16",
+              "departure": "05:17"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "05:21",
+              "departure": "05:22"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "05:26",
+              "departure": "05:27"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "05:31",
+              "departure": "05:33"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "05:35",
+              "departure": "05:36"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "05:39",
+              "departure": "05:40"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "05:45",
+              "departure": "05:46"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "05:48",
+              "departure": "05:50"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "05:54",
+              "departure": "05:56"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "06:01",
+              "departure": "06:02"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "06:06",
+              "departure": "06:08"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "06:11",
+              "departure": "06:13"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "06:17",
+              "departure": "06:19"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "06:22",
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30140,
+          "number": "6905",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "04:10"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "04:16",
+              "departure": "04:17"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "04:22",
+              "departure": "04:23"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "04:27",
+              "departure": "04:28"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "04:35",
+              "departure": "04:36"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "04:42",
+              "departure": "04:43"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "04:47",
+              "departure": "04:48"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "04:52",
+              "departure": "04:53"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "05:00",
+              "departure": "05:01"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "05:04",
+              "departure": "05:05"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "05:10",
+              "departure": "05:11"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "05:13",
+              "departure": "05:14"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "05:16",
+              "departure": "05:17"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "05:22",
+              "departure": "05:23"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "05:28",
+              "departure": "05:29"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "05:32",
+              "departure": "05:33"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "05:36",
+              "departure": "05:37"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "05:42",
+              "departure": "05:43"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "05:46",
+              "departure": "05:47"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "05:52",
+              "departure": "05:53"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "05:57",
+              "departure": "05:59"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "06:02",
+              "departure": "06:03"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "06:06",
+              "departure": "06:07"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "06:13",
+              "departure": "06:14"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "06:16",
+              "departure": "06:17"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "06:21",
+              "departure": "06:24"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "06:29",
+              "departure": "06:30"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "06:34",
+              "departure": "06:36"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "06:39",
+              "departure": "06:41"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "06:45",
+              "departure": "06:47"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "06:50",
+              "departure": "06:53"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "06:58",
+              "departure": "06:59"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "07:03",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 29075,
+          "number": "6909",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "04:50"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "04:56",
+              "departure": "04:57"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "05:01",
+              "departure": "05:02"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "05:06",
+              "departure": "05:07"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "05:14",
+              "departure": "05:15"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "05:21",
+              "departure": "05:22"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "05:26",
+              "departure": "05:27"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "05:30",
+              "departure": "05:31"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "05:38",
+              "departure": "05:39"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "05:42",
+              "departure": "05:43"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "05:47",
+              "departure": "05:48"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "05:51",
+              "departure": "05:52"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "05:54",
+              "departure": "05:55"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "05:59",
+              "departure": "06:00"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "06:04",
+              "departure": "06:05"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "06:09",
+              "departure": "06:10"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "06:13",
+              "departure": "06:14"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "06:18",
+              "departure": "06:19"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "06:22",
+              "departure": "06:23"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "06:28",
+              "departure": "06:29"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "06:34",
+              "departure": "06:36"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "06:39",
+              "departure": "06:40"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "06:43",
+              "departure": "06:44"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "06:48",
+              "departure": "06:49"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "06:51",
+              "departure": "06:53"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "06:58",
+              "departure": "07:01"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "07:06",
+              "departure": "07:07"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "07:11",
+              "departure": "07:13"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "07:17",
+              "departure": "07:18"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "07:22",
+              "departure": "07:24"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "07:27",
+              "departure": "07:30"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "07:35",
+              "departure": "07:36"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "07:40",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30684,
+          "number": "893",
+          "days": "щоденно",
+          "course": "Конотоп - Пас – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "05:43",
+              "departure": "05:45"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "06:03",
+              "departure": "06:04"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "06:14",
+              "departure": "06:15"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "06:26",
+              "departure": "06:27"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "06:41",
+              "departure": "06:42"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "06:49",
+              "departure": "06:50"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "07:06",
+              "departure": "07:08"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "07:22",
+              "departure": "07:25"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "07:34",
+              "departure": "07:36"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "07:41",
+              "departure": "07:43"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "07:47",
+              "departure": "07:48"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "07:51",
+              "departure": "07:54"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "07:59",
+              "departure": "08:00"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "08:06",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30147,
+          "number": "6911",
+          "days": "крім сб., нд.",
+          "course": "Ніжин – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "05:53"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "05:59",
+              "departure": "06:00"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "06:05",
+              "departure": "06:06"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "06:10",
+              "departure": "06:11"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "06:18",
+              "departure": "06:19"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "06:27",
+              "departure": "06:28"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "06:33",
+              "departure": "06:34"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "06:38",
+              "departure": "06:39"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "06:47",
+              "departure": "06:48"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "06:51",
+              "departure": "06:52"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "06:56",
+              "departure": "06:57"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "07:00",
+              "departure": "07:01"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "07:04",
+              "departure": "07:05"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "07:09",
+              "departure": "07:10"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "07:14",
+              "departure": "07:15"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "07:18",
+              "departure": "07:19"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "07:22",
+              "departure": "07:23"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "07:27",
+              "departure": "07:28"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "07:30",
+              "departure": "07:31"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "07:36",
+              "departure": "07:37"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "07:42",
+              "departure": "07:43"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "07:46",
+              "departure": "07:47"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "07:50",
+              "departure": "07:51"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "07:55",
+              "departure": "07:56"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "07:58",
+              "departure": "08:00"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "08:03",
+              "departure": "08:06"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "08:11",
+              "departure": "08:12"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "08:16",
+              "departure": "08:17"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "08:20",
+              "departure": "08:22"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "08:26",
+              "departure": "08:28"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "08:31",
+              "departure": "08:34"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "08:39",
+              "departure": "08:40"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "08:44",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 29870,
+          "number": "886/885",
+          "days": "крім ср.",
+          "course": "Славутич – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "07:32",
+              "departure": "07:35"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "07:53",
+              "departure": "07:54"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "08:13",
+              "departure": "08:14"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "08:33",
+              "departure": "08:34"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "08:50",
+              "departure": "08:51"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "09:04",
+              "departure": "09:07"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "09:14",
+              "departure": "09:17"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "09:20",
+              "departure": "09:22"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "09:26",
+              "departure": "09:28"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "09:31",
+              "departure": "09:34"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "09:39",
+              "departure": "09:40"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "09:44",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30703,
+          "number": "6913",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Пас. (Північна)",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "08:43"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "08:48",
+              "departure": "08:49"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "08:54",
+              "departure": "08:55"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "08:59",
+              "departure": "09:00"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "09:07",
+              "departure": "09:08"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "09:13",
+              "departure": "09:14"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "09:18",
+              "departure": "09:30"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "09:34",
+              "departure": "09:35"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "09:42",
+              "departure": "09:43"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "09:45",
+              "departure": "09:46"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "09:50",
+              "departure": "09:51"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "09:54",
+              "departure": "09:55"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "09:57",
+              "departure": "09:58"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "10:03",
+              "departure": "10:04"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "10:08",
+              "departure": "10:09"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "10:12",
+              "departure": "10:13"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "10:15",
+              "departure": "10:16"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "10:21",
+              "departure": "10:22"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "10:25",
+              "departure": "10:26"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "10:30",
+              "departure": "10:31"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "10:37",
+              "departure": "10:39"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "10:42",
+              "departure": "10:43"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "10:46",
+              "departure": "10:47"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "10:52",
+              "departure": "10:53"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "10:55",
+              "departure": "10:57"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "11:00",
+              "departure": "11:03"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "11:08",
+              "departure": "11:09"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "11:14",
+              "departure": "11:16"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "11:19",
+              "departure": "11:20"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "11:24",
+              "departure": "11:25"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "11:29",
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 31019,
+          "number": "896/895",
+          "days": "щоденно",
+          "course": "Шостка – Фастів-1",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "08:55",
+              "departure": "08:57"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "09:15",
+              "departure": "09:16"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "09:52",
+              "departure": "09:53"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "10:09",
+              "departure": "10:10"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "10:23",
+              "departure": "10:26"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "10:33",
+              "departure": "10:35"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": "10:47",
+              "departure": "10:50"
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "10:54",
+              "departure": "10:55"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "10:59",
+              "departure": "11:00"
+            }
+          ]
+        },
+        {
+          "tid": 30089,
+          "number": "6917",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Пас. (Північна)",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "11:10"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "11:15",
+              "departure": "11:16"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "11:21",
+              "departure": "11:22"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "11:26",
+              "departure": "11:27"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "11:34",
+              "departure": "11:35"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "11:39",
+              "departure": "11:40"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "11:44",
+              "departure": "11:45"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "11:48",
+              "departure": "11:49"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "11:56",
+              "departure": "11:57"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "11:59",
+              "departure": "12:00"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "12:04",
+              "departure": "12:05"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "12:07",
+              "departure": "12:08"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "12:10",
+              "departure": "12:11"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "12:16",
+              "departure": "12:17"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "12:21",
+              "departure": "12:22"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "12:25",
+              "departure": "12:26"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "12:29",
+              "departure": "12:30"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "12:34",
+              "departure": "12:35"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "12:39",
+              "departure": "12:40"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "12:44",
+              "departure": "12:45"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "12:50",
+              "departure": "12:51"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "12:54",
+              "departure": "12:55"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "12:58",
+              "departure": "12:59"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "13:05",
+              "departure": "13:06"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "13:08",
+              "departure": "13:09"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "13:15",
+              "departure": "13:17"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "13:22",
+              "departure": "13:23"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "13:27",
+              "departure": "13:29"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "13:33",
+              "departure": "13:34"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "13:38",
+              "departure": "13:39"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "13:45",
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30682,
+          "number": "897",
+          "days": "по пт., сб., нд.",
+          "course": "Конотоп - Пас – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "14:55",
+              "departure": "14:58"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "15:16",
+              "departure": "15:17"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "15:27",
+              "departure": "15:28"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "15:39",
+              "departure": "15:40"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "15:54",
+              "departure": "15:55"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "16:02",
+              "departure": "16:03"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "16:19",
+              "departure": "16:21"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "16:34",
+              "departure": "16:37"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "16:45",
+              "departure": "16:47"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "16:50",
+              "departure": "16:52"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "16:56",
+              "departure": "16:57"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "17:00",
+              "departure": "17:03"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "17:08",
+              "departure": "17:09"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "17:13",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30093,
+          "number": "6923",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Пас. (Північна)",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "15:18"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "15:23",
+              "departure": "15:24"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "15:29",
+              "departure": "15:30"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "15:34",
+              "departure": "15:35"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "15:42",
+              "departure": "15:43"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "15:48",
+              "departure": "15:49"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "15:53",
+              "departure": "15:54"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "15:58",
+              "departure": "15:59"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "16:07",
+              "departure": "16:08"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "16:11",
+              "departure": "16:12"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "16:16",
+              "departure": "16:17"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "16:19",
+              "departure": "16:20"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "16:22",
+              "departure": "16:23"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "16:28",
+              "departure": "16:29"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "16:34",
+              "departure": "16:35"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "16:38",
+              "departure": "16:39"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "16:42",
+              "departure": "16:43"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "16:47",
+              "departure": "16:48"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "16:51",
+              "departure": "16:52"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "16:57",
+              "departure": "16:58"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "17:02",
+              "departure": "17:03"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "17:06",
+              "departure": "17:07"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "17:10",
+              "departure": "17:11"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "17:16",
+              "departure": "17:17"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "17:19",
+              "departure": "17:20"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "17:24",
+              "departure": "17:27"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "17:30",
+              "departure": "17:31"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "17:35",
+              "departure": "17:36"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "17:39",
+              "departure": "17:40"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "17:45",
+              "departure": "17:46"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "17:50",
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30813,
+          "number": "6925",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Пас. (Північна)",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "16:43"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "16:49",
+              "departure": "16:50"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "16:55",
+              "departure": "16:56"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "17:00",
+              "departure": "17:01"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "17:08",
+              "departure": "17:09"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "17:13",
+              "departure": "17:14"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "17:20",
+              "departure": "17:30"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "17:34",
+              "departure": "17:35"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "17:43",
+              "departure": "17:44"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "17:47",
+              "departure": "17:48"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "17:53",
+              "departure": "17:54"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "17:56",
+              "departure": "17:57"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "18:00",
+              "departure": "18:01"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "18:06",
+              "departure": "18:07"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "18:12",
+              "departure": "18:13"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "18:16",
+              "departure": "18:17"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "18:20",
+              "departure": "18:21"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "18:25",
+              "departure": "18:26"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "18:30",
+              "departure": "18:31"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "18:35",
+              "departure": "18:36"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "18:40",
+              "departure": "18:42"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "18:44",
+              "departure": "18:45"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "18:48",
+              "departure": "18:49"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "18:53",
+              "departure": "18:54"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "18:56",
+              "departure": "18:58"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "19:01",
+              "departure": "19:04"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "19:09",
+              "departure": "19:10"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "19:14",
+              "departure": "19:16"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "19:19",
+              "departure": "19:20"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "19:24",
+              "departure": "19:25"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "19:28",
+              "departure": null
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": null,
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 29156,
+          "number": "892/891",
+          "days": "крім вт., чт.",
+          "course": "Славутич – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": "19:44",
+              "departure": "19:47"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "20:02",
+              "departure": "20:03"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "20:21",
+              "departure": "20:22"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "20:50",
+              "departure": "20:51"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "21:03",
+              "departure": "21:06"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "21:14",
+              "departure": "21:16"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "21:19",
+              "departure": "21:20"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "21:24",
+              "departure": "21:25"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "21:29",
+              "departure": "21:32"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "21:37",
+              "departure": "21:39"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "21:43",
+              "departure": null
+            }
+          ]
+        },
+        {
+          "tid": 30814,
+          "number": "6927",
+          "days": "щоденно",
+          "course": "Ніжин – Київ-Волинський",
+          "stations": [
+            {
+              "id": 56,
+              "name": "Ніжин",
+              "km": 132.2,
+              "arrival": null,
+              "departure": "20:18"
+            },
+            {
+              "id": 55,
+              "name": "з.п. Ніжинське",
+              "km": 127.8,
+              "arrival": "20:23",
+              "departure": "20:24"
+            },
+            {
+              "id": 54,
+              "name": "з.п. Володькова Дівиця",
+              "km": 121.6,
+              "arrival": "20:29",
+              "departure": "20:30"
+            },
+            {
+              "id": 53,
+              "name": "з.п. Дослідна",
+              "km": 115.9,
+              "arrival": "20:34",
+              "departure": "20:35"
+            },
+            {
+              "id": 52,
+              "name": "Носівка",
+              "km": 108.4,
+              "arrival": "20:42",
+              "departure": "20:43"
+            },
+            {
+              "id": 51,
+              "name": "з.п. Космічна",
+              "km": 103.6,
+              "arrival": "20:48",
+              "departure": "20:49"
+            },
+            {
+              "id": 50,
+              "name": "Кобижча",
+              "km": 98.8,
+              "arrival": "20:53",
+              "departure": "20:54"
+            },
+            {
+              "id": 49,
+              "name": "з.п. Січових Стрільців",
+              "km": 94.2,
+              "arrival": "20:57",
+              "departure": "20:58"
+            },
+            {
+              "id": 48,
+              "name": "Бобровиця",
+              "km": 84.5,
+              "arrival": "21:05",
+              "departure": "21:06"
+            },
+            {
+              "id": 47,
+              "name": "з.п. Макарівка",
+              "km": 80.9,
+              "arrival": "21:08",
+              "departure": "21:09"
+            },
+            {
+              "id": 46,
+              "name": "з.п. Марківці",
+              "km": 76.9,
+              "arrival": "21:14",
+              "departure": "21:15"
+            },
+            {
+              "id": 45,
+              "name": "з.п. Ярославка",
+              "km": 73.0,
+              "arrival": "21:17",
+              "departure": "21:18"
+            },
+            {
+              "id": 44,
+              "name": "з.п. Трубіж",
+              "km": 70.4,
+              "arrival": "21:21",
+              "departure": "21:22"
+            },
+            {
+              "id": 43,
+              "name": "Заворичі",
+              "km": 66.0,
+              "arrival": "21:26",
+              "departure": "21:27"
+            },
+            {
+              "id": 42,
+              "name": "з.п. Семиполки",
+              "km": 59.8,
+              "arrival": "21:31",
+              "departure": "21:32"
+            },
+            {
+              "id": 41,
+              "name": "Бобрик",
+              "km": 57.5,
+              "arrival": "21:35",
+              "departure": "21:36"
+            },
+            {
+              "id": 40,
+              "name": "з.п. Жердова",
+              "km": 54.1,
+              "arrival": "21:39",
+              "departure": "21:40"
+            },
+            {
+              "id": 39,
+              "name": "з.п. Димерка",
+              "km": 48.4,
+              "arrival": "21:44",
+              "departure": "21:45"
+            },
+            {
+              "id": 38,
+              "name": "з.п. Парникова",
+              "km": 44.8,
+              "arrival": "21:48",
+              "departure": "21:49"
+            },
+            {
+              "id": 37,
+              "name": "з.п. Квітневий",
+              "km": 39.0,
+              "arrival": "21:54",
+              "departure": "21:55"
+            },
+            {
+              "id": 36,
+              "name": "Бровари",
+              "km": 35.9,
+              "arrival": "21:59",
+              "departure": "22:00"
+            },
+            {
+              "id": 35,
+              "name": "з.п. Княжичі",
+              "km": 32.9,
+              "arrival": "22:03",
+              "departure": "22:04"
+            },
+            {
+              "id": 34,
+              "name": "з.п. Ялинка",
+              "km": 30.3,
+              "arrival": "22:06",
+              "departure": "22:07"
+            },
+            {
+              "id": 32,
+              "name": "з.п. ДВРЗ",
+              "km": 24.1,
+              "arrival": "22:12",
+              "departure": "22:13"
+            },
+            {
+              "id": 31,
+              "name": "з.п. Дарниця-депо",
+              "km": 22.9,
+              "arrival": "22:15",
+              "departure": "22:16"
+            },
+            {
+              "id": 30,
+              "name": "Дарниця",
+              "km": 20.7,
+              "arrival": "22:19",
+              "departure": "22:22"
+            },
+            {
+              "id": 29,
+              "name": "з.п. Березняки",
+              "km": 17.6,
+              "arrival": "22:27",
+              "departure": "22:28"
+            },
+            {
+              "id": 28,
+              "name": "з.п. Видубичі",
+              "km": 13.8,
+              "arrival": "22:32",
+              "departure": "22:34"
+            },
+            {
+              "id": 27,
+              "name": "Київ-Деміївський",
+              "km": 12.0,
+              "arrival": "22:37",
+              "departure": "22:38"
+            },
+            {
+              "id": 26,
+              "name": "з.п. Протасів Яр",
+              "km": 8.8,
+              "arrival": "22:42",
+              "departure": "22:43"
+            },
+            {
+              "id": 2,
+              "name": "Київ-Пас. (Приміський)",
+              "km": 6.6,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 24,
+              "name": "Київ-Пас.",
+              "km": 6.3,
+              "arrival": null,
+              "departure": null
+            },
+            {
+              "id": 1,
+              "name": "з.п. Київ-Пас. (Північна)",
+              "km": 6.1,
+              "arrival": "22:46",
+              "departure": "22:49"
+            },
+            {
+              "id": 3,
+              "name": "з.п. Караваєві Дачі",
+              "km": 3.2,
+              "arrival": "22:54",
+              "departure": "22:55"
+            },
+            {
+              "id": 4,
+              "name": "Київ-Волинський",
+              "km": 0.0,
+              "arrival": "22:59",
+              "departure": null
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

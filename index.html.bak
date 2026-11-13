@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>РЕЙСИ — Ніжин ⇄ Київ</title>
+<style>
+:root {
+  --bg:#101216;
+  --panel:#1a1e26;
+  --panel2:#222832;
+  --border:#303744;
+  --text:#f4f5f7;
+  --muted:#9ba5b2;
+  --red:#ed594d;
+  --peach:#ffb38e;
+}
+* {box-sizing:border-box}
+body {
+  margin:0;
+  background:radial-gradient(ellipse at 80% 0%,#452524,transparent 38%),var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,sans-serif;
+}
+.container {max-width:1100px;margin:auto;padding:25px 18px 60px}
+header {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
+.brand {font-size:23px;font-weight:900;letter-spacing:1px}
+.logo {
+  display:inline-grid;place-items:center;
+  width:43px;height:43px;border-radius:14px;
+  background:linear-gradient(135deg,var(--red),var(--peach));
+  color:#171717;margin-right:10px
+}
+.status {color:var(--muted);font-size:12px}
+.hero h1 {font-size:clamp(35px,6vw,60px);margin:10px 0;letter-spacing:-2px}
+.hero h1 span {color:var(--peach)}
+.hero p {color:var(--muted)}
+.eyebrow {color:var(--peach);font-size:12px;letter-spacing:2px}
+.search {
+  margin-top:30px;padding:20px;
+  background:var(--panel);border:1px solid var(--border);
+  border-radius:20px;
+  display:grid;grid-template-columns:1fr 45px 1fr 170px;
+  gap:12px;align-items:end
+}
+.field label {display:block;color:var(--muted);font-size:12px;margin-bottom:7px}
+input {
+  width:100%;padding:13px;
+  background:#11151b;border:1px solid var(--border);
+  border-radius:11px;color:white;font:inherit
+}
+button {
+  cursor:pointer;border:0;border-radius:11px;
+  padding:13px 17px;font:inherit;font-weight:750
+}
+.searchBtn {
+  background:linear-gradient(110deg,var(--red),var(--peach));
+  color:#211311
+}
+.swap {background:var(--panel2);color:var(--peach)}
+.toolbar {
+  display:flex;justify-content:space-between;
+  align-items:center;flex-wrap:wrap;gap:15px;margin:30px 0 15px
+}
+.count {font-size:21px;font-weight:800}
+.filters {display:flex;gap:8px}
+.filter {
+  background:var(--panel2);color:var(--muted);
+  border:1px solid var(--border);padding:8px 13px;border-radius:30px
+}
+.filter.active {color:var(--peach);border-color:var(--red)}
+.cards {display:grid;gap:12px}
+.train {
+  display:grid;grid-template-columns:100px 1fr 85px;
+  align-items:center;gap:15px;
+  padding:19px;background:var(--panel);
+  border:1px solid var(--border);border-radius:16px;
+  transition:.2s
+}
+.train:hover {border-color:#9b6255;transform:translateY(-2px)}
+.time {font-size:25px;font-weight:850}
+.duration {font-size:12px;color:var(--muted)}
+.route {display:flex;align-items:center;gap:12px}
+.station {font-weight:750}
+.line {height:2px;flex:1;background:linear-gradient(90deg,var(--red),var(--peach));position:relative}
+.line:after {
+  content:"";position:absolute;right:0;top:-4px;
+  width:10px;height:10px;border-radius:50%;background:var(--peach)
+}
+.meta {display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}
+.tag {font-size:11px;padding:4px 8px;border-radius:6px;background:#2b313b;color:#cbd1db}
+.tag.reg {background:#3b2924;color:#ffd0bd}
+.arrival {text-align:right;font-size:23px;font-weight:850}
+.arrival small {display:block;font-size:11px;color:var(--muted);font-weight:400}
+.notice {
+  margin-top:25px;padding:15px;
+  border:1px solid #705044;background:#2b211e;
+  border-radius:13px;color:#f1c3aa;font-size:13px
+}
+footer {margin-top:25px;color:var(--muted);font-size:12px}
+a {color:var(--peach)}
+.empty {padding:35px;text-align:center;background:var(--panel);border-radius:15px;color:var(--muted)}
+@media(max-width:750px) {
+ .search {grid-template-columns:1fr 1fr}
+ .swap {grid-column:1}
+ .searchBtn {grid-column:1/-1}
+ .train {grid-template-columns:1fr 1fr}
+ .routeBox {grid-column:1/-1;grid-row:2}
+ .arrival {grid-column:2;grid-row:1}
+}
+@media(max-width:450px) {
+ .container {padding:18px 12px}
+ .search {grid-template-columns:1fr}
+ .swap {width:45px}
+ .searchBtn {grid-column:auto}
+ .train {padding:14px}
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="brand"><span class="logo">↗</span>РЕЙСИ <span style="color:#ffb38e">/ UA</span></div>
+  <div class="status">ЗАЛІЗНИЧНИЙ РОЗКЛАД</div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">ПРИМІСЬКІ ТА РЕГІОНАЛЬНІ ПОЇЗДИ</div>
+  <h1>Ніжин <span>⇄</span> Київ</h1>
+  <p>Знайди свій рейс. Перевір час відправлення та прибуття.</p>
+</section>
+
+<section class="search">
+  <div class="field">
+    <label>ЗВІДКИ</label>
+    <input id="from" value="Ніжин">
+  </div>
+  <button class="swap" id="swap">⇄</button>
+  <div class="field">
+    <label>КУДИ</label>
+    <input id="to" value="Київ">
+  </div>
+  <div class="field">
+    <label>ДАТА</label>
+    <input type="date" id="date">
+  </div>
+  <button class="searchBtn" id="search">Знайти рейси →</button>
+</section>
+
+<section class="toolbar">
+  <div>
+    <div class="count" id="count">Завантаження...</div>
+    <div class="status" id="subtitle">Рейси за напрямком</div>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="all">Усі</button>
+    <button class="filter" data-filter="Електричка">Електрички</button>
+    <button class="filter" data-filter="Регіональний">Регіональні</button>
+  </div>
+</section>
+
+<section class="cards" id="results"></section>
+
+<div class="notice">
+  <b>Увага!</b> Дані розкладу потрібно звіряти з офіційним джерелом.
+  Автоматичне оновлення ще не підключено. Дата вибору не гарантує,
+  що конкретний рейс курсує цього дня.
+</div>
+
+<footer>
+  РЕЙСИ / UA · Незалежний інформаційний проєкт<br><br>
+  Джерела:
+  <a href="https://swrailway.gov.ua/timetable/eltrain/" target="_blank">Укрзалізниця</a>
+  ·
+  <a href="https://railukraine.com/" target="_blank">Rail Ukraine</a>
+</footer>
+
+</div>
+
+<script>
+let trains = [];
+let filter = "all";
+
+const $ = id => document.getElementById(id);
+
+const today = new Date();
+$("date").value =
+  `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+
+async function loadSchedule() {
+  try {
+    const response = await fetch("./schedule.json");
+    if (!response.ok) throw new Error("HTTP " + response.status);
+
+    const data = await response.json();
+    trains = data.trains || [];
+    render();
+  } catch (error) {
+    $("count").textContent = "Помилка завантаження";
+    $("results").innerHTML =
+      '<div class="empty">Не вдалося завантажити schedule.json. Запусти локальний сервер.</div>';
+  }
+}
+
+function render() {
+  const from = $("from").value.trim();
+  const to = $("to").value.trim();
+
+  const valid =
+    from.toLowerCase().includes("ніжин") &&
+    to.toLowerCase().includes("київ");
+
+  const list = valid
+    ? trains.filter(t => filter === "all" || t.kind === filter)
+    : [];
+
+  $("count").textContent = list.length + " рейсів у базі";
+  $("subtitle").textContent = `${from} → ${to} · ${$("date").value}`;
+
+  if (!list.length) {
+    $("results").innerHTML =
+      '<div class="empty">Рейсів за цим напрямком поки немає в базі.</div>';
+    return;
+  }
+
+  $("results").innerHTML = list.map(t => `
+    <article class="train">
+      <div>
+        <div class="time">${t.dep}</div>
+        <div class="duration">${t.duration}</div>
+      </div>
+
+      <div class="routeBox">
+        <div class="route">
+          <span class="station">${from}</span>
+          <span class="line"></span>
+          <span class="station">${t.to}</span>
+        </div>
+
+        <div class="meta">
+          <span class="tag ${t.kind === "Регіональний" ? "reg" : ""}">${t.kind}</span>
+          <span class="tag">№ ${t.id}</span>
+          <span class="tag">${t.days}</span>
+          <span class="tag">${t.stops} зупинок</span>
+        </div>
+      </div>
+
+      <div class="arrival">
+        ${t.arr}
+        <small>прибуття</small>
+      </div>
+    </article>
+  `).join("");
+}
+
+$("search").addEventListener("click", render);
+
+$("swap").addEventListener("click", () => {
+  const old = $("from").value;
+  $("from").value = $("to").value;
+  $("to").value = old;
+  render();
+});
+
+document.querySelectorAll(".filter").forEach(button => {
+  button.addEventListener("click", () => {
+    document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+    button.classList.add("active");
+    filter = button.dataset.filter;
+    render();
+  });
+});
+
+loadSchedule();
+</script>
+</body>
+</html>
