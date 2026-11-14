@@ -1,265 +1,227 @@
-
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 """
-Парсер приміських поїздів Київ — Ніжин.
-Джерело: офіційний сайт Південно-Західної залізниці.
+Парсер приміських поїздів Київ — Ніжин із сайту Poizdato.net.
+Зберігає дані у форматі schedule.json, сумісному з попереднім парсером.
 """
 
 import argparse
 import json
 import re
-import sys
+import time
 from datetime import date, datetime
 from pathlib import Path
+from urllib.parse import urljoin
 
 import requests
 from bs4 import BeautifulSoup
 
 
-URL = "https://swrailway.gov.ua/timetable/eltrain/"
+BASE_URL = "https://poizdato.net"
+DIRECTIONS = {
+    "kyiv_nizhyn": {
+        "title": "Київ — Ніжин",
+        "url": "https://poizdato.net/rozklad-poizdiv/kyiv--nizhyn/elektrychky/"
+    },
+    "nizhyn_kyiv": {
+        "title": "Ніжин — Київ",
+        "url": "https://poizdato.net/rozklad-poizdiv/nizhyn--kyiv/elektrychky/"
+    }
+}
+
 OUTPUT = Path(__file__).resolve().parent / "schedule.json"
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) "
-                  "AppleWebKit/537.36 Chrome/120 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/124.0.0.0 Safari/537.36",
+    "Accept-Language": "uk-UA,uk;q=0.9,en;q=0.8"
 }
 
-TIME_RE = re.compile(r"^\d{1,2}:\d{2}$")
-TID_RE = re.compile(r"tid=(\d+)")
-SID_RE = re.compile(r"sid=(\d+)")
+TIME_RE = re.compile(r"\b(\d{1,2})[.:](\d{2})\b")
 
 
 def clean_text(element):
+    if not element:
+        return ""
     return " ".join(element.stripped_strings).strip()
 
 
-def get_stations(tab):
-    """Отримує станції та кілометраж з лівої таблиці."""
+def normalize_time(raw):
+    if not raw:
+        return None
+    match = TIME_RE.search(raw)
+    if not match:
+        return None
+    return f"{int(match.group(1)):02d}:{match.group(2)}"
 
-    table = tab.select_one("table.left")
 
-    if not table:
-        raise ValueError("Не знайдено таблицю станцій")
+def parse_train_stops(train_url, session):
+    """Завантажує сторінку конкретного поїзда та витягує всі його зупинки."""
+    resp = session.get(train_url, headers=HEADERS, timeout=25)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
+
+    days = "щоденно"
+    for p in soup.select("p"):
+        txt = clean_text(p)
+        if "курсує" in txt.lower():
+            days = re.sub(r"^.*?курсує\s*", "", txt, flags=re.IGNORECASE).rstrip(".")
+            break
 
     stations = []
-
-    for row in table.select("tr"):
-        link = row.select_one('a.et[href*="sid="]')
-
-        if not link:
+    # Шукаємо таблицю розкладу зупинок на сторінці поїзда
+    for table in soup.select("table"):
+        rows = table.select("tr")
+        if len(rows) < 5:
             continue
 
-        match = SID_RE.search(link.get("href", ""))
+        temp_stations = []
+        for idx, row in enumerate(rows, start=1):
+            cells = row.find_all(["td", "th"], recursive=False)
+            if len(cells) < 2:
+                continue
 
-        if not match:
-            continue
+            row_text = clean_text(row)
+            if not TIME_RE.search(row_text):
+                continue
 
-        km_cell = row.select_one("td.kmss")
+            # Назва станції зазвичай у першій комірці з посиланням або текстом
+            link = row.select_one("a")
+            station_name = clean_text(link) if link else clean_text(cells[0])
+            station_name = re.sub(r"^(Станція|з\.п\.)\s+", "", station_name, flags=re.IGNORECASE).strip()
 
-        km = None
-        if km_cell:
-            try:
-                km = float(clean_text(km_cell).replace(",", "."))
-            except ValueError:
-                pass
+            if not station_name or len(station_name) < 2:
+                continue
 
-        stations.append({
-            "id": int(match.group(1)),
-            "name": clean_text(link),
-            "km": km
-        })
+            # Витягуємо час прибуття і відправлення з комірок рядка
+            arrival = None
+            departure = None
+            for cell in cells[1:]:
+                c_text = clean_text(cell)
+                if "приб" in c_text.lower():
+                    arrival = normalize_time(c_text)
+                elif "відпр" in c_text.lower():
+                    departure = normalize_time(c_text)
 
-    if not stations:
-        raise ValueError("Список станцій порожній")
+            # Якщо підписів "приб./відпр." немає, беремо перші два значення часу у рядку
+            if arrival is None and departure is None:
+                times = [f"{int(h):02d}:{m}" for h, m in TIME_RE.findall(row_text)]
+                # Відсіюємо час у дорозі (наприклад, "2г 15хв" не потрапить під TIME_RE)
+                if len(times) == 1:
+                    if idx == 1:
+                        departure = times[0]
+                    else:
+                        arrival = times[0]
+                elif len(times) >= 2:
+                    arrival = times[0]
+                    departure = times[1]
 
-    return stations
+            if arrival or departure:
+                temp_stations.append({
+                    "id": idx,
+                    "name": station_name,
+                    "km": None,
+                    "arrival": arrival,
+                    "departure": departure
+                })
+
+        if len(temp_stations) >= 3:
+            stations = temp_stations
+            break
+
+    return days, stations
 
 
-def get_trains(right_table):
-    """Отримує номери, tid, маршрути та дні курсування."""
-
-    links = right_table.select('a.et[href*="tid="]')
+def parse_direction(dir_key, config, session):
+    """Розбирає список електричок для одного напрямку."""
+    resp = session.get(config["url"], headers=HEADERS, timeout=25)
+    resp.raise_for_status()
+    soup = BeautifulSoup(resp.text, "html.parser")
 
     trains = []
+    seen_urls = set()
 
-    for link in links:
-        match = TID_RE.search(link.get("href", ""))
-
-        if not match:
+    # Знаходимо всі посилання на сторінки електричок (/rozklad-elektrychky/...)
+    for link in soup.select('a[href*="/rozklad-elektrychky/"]'):
+        href = link.get("href", "")
+        full_url = urljoin(BASE_URL, href)
+        if full_url in seen_urls:
             continue
 
-        text = clean_text(link)
-        number_match = re.search(r"[\d]+(?:/[\d]+)?", text)
+        row = link.find_parent("tr")
+        row_text = clean_text(row) if row else clean_text(link)
 
-        if not number_match:
+        # Витягуємо номер поїзда (наприклад, 6902 або 896/895)
+        num_match = re.search(r"\b(\d{3,4}(?:/\d{3,4})?)\b", row_text)
+        if not num_match:
+            continue
+
+        seen_urls.add(full_url)
+        train_number = num_match.group(1)
+
+        # Витягуємо назву маршруту (наприклад, "Київ-Волинський — Ніжин")
+        course = config["title"]
+        route_match = re.search(
+            r"([А-ЯІЇЄҐ][А-ЯІЇЄҐа-яіїєґ'\-\.\(\)\s]+?(?:→|—|-)\s*[А-ЯІЇЄҐ][А-ЯІЇЄҐа-яіїєґ'\-\.\(\)\s]+)",
+            row_text
+        )
+        if route_match:
+            course = route_match.group(1).replace("→", "—").strip()
+
+        print(f"  Завантажую зупинки поїзда №{train_number}...")
+        days, stations = parse_train_stops(full_url, session)
+
+        if not stations:
+            print(f"  Увага: не вдалося розібрати зупинки для №{train_number}, пропускаю.")
             continue
 
         trains.append({
-            "tid": int(match.group(1)),
-            "number": number_match.group(0),
-            "days": text.replace(number_match.group(0), "", 1)
-                    .strip(" ,"),
-            "course": None
+            "tid": int(re.sub(r"\D", "", train_number.split("/")[0])),
+            "number": train_number,
+            "days": days,
+            "course": course,
+            "stations": stations
         })
 
-    # Додаємо назви маршрутів із верхнього рядка таблиці.
-    course_row = right_table.select_one("tr.train_obig")
-
-    if course_row:
-        courses = [
-            clean_text(cell)
-            for cell in course_row.select("td.course")
-        ]
-
-        for index, train in enumerate(trains):
-            if index < len(courses):
-                train["course"] = courses[index]
+        # Невелика пауза, щоб сервер не блокував часті запити
+        time.sleep(0.5)
 
     if not trains:
-        raise ValueError("Не знайдено жодного поїзда")
+        raise ValueError(f"Не знайдено жодної електрички для напрямку {config['title']}")
 
-    return trains
-
-
-def get_time_rows(right_table, train_count):
-    """Отримує рядки часу прибуття та відправлення."""
-
-    result = []
-
-    for row in right_table.select("tr"):
-        cells = []
-
-        for cell in row.find_all("td", recursive=False):
-            classes = cell.get("class", [])
-
-            if "q0" not in classes and "q1" not in classes:
-                continue
-
-            value = clean_text(cell)
-
-            if value == "–" or value == "-":
-                cells.append(None)
-            elif TIME_RE.match(value):
-                cells.append(value)
-            else:
-                cells.append(None)
-
-        if len(cells) == train_count * 2:
-            result.append(cells)
-
-    return result
-
-
-def parse_direction(soup, tab_id):
-    """Розбирає один напрямок руху."""
-
-    tab = soup.select_one(f"div#{tab_id}")
-
-    if not tab:
-        raise ValueError(f"Не знайдено блок {tab_id}")
-
-    stations = get_stations(tab)
-
-    right_container = tab.select_one("div.gotime")
-
-    if not right_container:
-        raise ValueError(f"Не знайдено таблицю часу в {tab_id}")
-
-    right_table = right_container.select_one("table")
-
-    if not right_table:
-        raise ValueError("Не знайдено внутрішню таблицю часу")
-
-    trains = get_trains(right_table)
-
-    time_rows = get_time_rows(right_table, len(trains))
-
-    if len(time_rows) != len(stations):
-        raise ValueError(
-            f"{tab_id}: кількість станцій ({len(stations)}) "
-            f"не збігається з рядками часу ({len(time_rows)}). "
-            "Не зберігаю неповний розклад."
-        )
-
-    for train_index, train in enumerate(trains):
-        train_stations = []
-
-        for station_index, station in enumerate(stations):
-            cells = time_rows[station_index]
-
-            arrival = cells[train_index * 2]
-            departure = cells[train_index * 2 + 1]
-
-            train_stations.append({
-                **station,
-                "arrival": arrival,
-                "departure": departure
-            })
-
-        train["stations"] = train_stations
-
-    heading = tab.select_one("tr.shapka_obig b")
+    max_stations = max(len(t["stations"]) for t in trains)
 
     return {
-        "title": clean_text(heading) if heading else tab_id,
-        "stations_count": len(stations),
+        "title": config["title"],
+        "stations_count": max_stations,
         "trains": trains
     }
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Розклад електричок Київ — Ніжин"
+        description="Розклад електричок Київ — Ніжин (Poizdato.net)"
     )
-
     parser.add_argument(
         "--date",
         default=date.today().isoformat(),
         help="Дата розкладу у форматі YYYY-MM-DD"
     )
-
     args = parser.parse_args()
 
-    try:
-        datetime.strptime(args.date, "%Y-%m-%d")
-    except ValueError:
-        sys.exit("Помилка: дата має бути у форматі YYYY-MM-DD")
-
-    params = {
-        "gid": 2,
-        "rid": 2,
-        "reverse": 0,
-        "dateR": 1,
-        "eventdate": args.date
-    }
-
-    print(f"Завантажую розклад на {args.date}...")
-
-    response = requests.get(
-        URL,
-        params=params,
-        headers=HEADERS,
-        timeout=30
-    )
-
-    response.raise_for_status()
-    response.encoding = response.apparent_encoding
-
-    soup = BeautifulSoup(response.text, "html.parser")
+    session = requests.Session()
 
     print("Обробляю Київ → Ніжин...")
-    forward = parse_direction(soup, "tabs-trains1")
+    forward = parse_direction("kyiv_nizhyn", DIRECTIONS["kyiv_nizhyn"], session)
 
     print("Обробляю Ніжин → Київ...")
-    backward = parse_direction(soup, "tabs-trains2")
+    backward = parse_direction("nizhyn_kyiv", DIRECTIONS["nizhyn_kyiv"], session)
 
     data = {
-        "source": URL,
-        "checked": datetime.now().astimezone().isoformat(
-            timespec="seconds"
-        ),
+        "source": DIRECTIONS["kyiv_nizhyn"]["url"],
+        "checked": datetime.now().astimezone().isoformat(timespec="seconds"),
         "date": args.date,
         "route": "Київ — Ніжин",
         "directions": {
@@ -269,21 +231,16 @@ def main():
     }
 
     temporary = OUTPUT.with_suffix(".tmp")
-
     temporary.write_text(
         json.dumps(data, ensure_ascii=False, indent=2),
         encoding="utf-8"
     )
-
     temporary.replace(OUTPUT)
 
-    print()
-    print("ГОТОВО!")
+    print("\nГОТОВО!")
     print(f"Файл: {OUTPUT}")
     print(f"Київ → Ніжин: {len(forward['trains'])} поїздів")
     print(f"Ніжин → Київ: {len(backward['trains'])} поїздів")
-    print(f"Станцій у першому напрямку: {forward['stations_count']}")
-    print(f"Станцій у другому напрямку: {backward['stations_count']}")
 
 
 if __name__ == "__main__":
